@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill: agencia — Priori Digital</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+    min-height: 100vh;
+    padding: 40px 24px;
+  }
+
+  .container { max-width: 1100px; margin: 0 auto; }
+
+  /* HEADER */
+  .header {
+    display: flex; align-items: center; gap: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #21262d;
+  }
+  .skill-badge {
+    background: linear-gradient(135deg, #1f6feb, #388bfd);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+  }
+  .header-text h1 {
+    font-size: 28px; font-weight: 700;
+    background: linear-gradient(90deg, #e6edf3, #7d8590);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .header-text p {
+    color: #7d8590; font-size: 14px; margin-top: 4px;
+  }
+  .path-badge {
+    margin-left: auto;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-family: 'Cascadia Code', 'Fira Code', monospace;
+    font-size: 12px;
+    color: #79c0ff;
+    white-space: nowrap;
+  }
+  .path-badge span { color: #7d8590; display: block; font-size: 10px; margin-bottom: 3px; }
+
+  /* PIPELINE */
+  .pipeline {
+    display: flex; gap: 0; margin-bottom: 40px;
+    background: #161b22; border: 1px solid #21262d; border-radius: 12px;
+    overflow: hidden;
+  }
+  .stage {
+    flex: 1; padding: 24px 20px;
+    border-right: 1px solid #21262d;
+    position: relative;
+  }
+  .stage:last-child { border-right: none; }
+  .stage-num {
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: #7d8590; margin-bottom: 8px;
+  }
+  .stage-title {
+    font-size: 18px; font-weight: 700; margin-bottom: 6px;
+  }
+  .stage-desc { font-size: 13px; color: #8b949e; line-height: 1.5; }
+  .stage-arrow {
+    position: absolute; right: -12px; top: 50%;
+    transform: translateY(-50%);
+    width: 24px; height: 24px;
+    background: #0d1117; border: 1px solid #21262d;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; color: #388bfd; z-index: 1;
+  }
+  .stage:last-child .stage-arrow { display: none; }
+  .stage-1 .stage-title { color: #79c0ff; }
+  .stage-2 .stage-title { color: #a5d6ff; }
+  .stage-3 .stage-title { color: #56d364; }
+
+  /* TAGS */
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .tag {
+    font-size: 11px; padding: 2px 8px; border-radius: 4px; font-weight: 500;
+  }
+  .tag-blue { background: #1f3a5f; color: #79c0ff; border: 1px solid #1f6feb44; }
+  .tag-green { background: #1a3a1f; color: #56d364; border: 1px solid #2ea04344; }
+  .tag-yellow { background: #3a2e0a; color: #e3b341; border: 1px solid #e3b34144; }
+  .tag-purple { background: #2d1f3a; color: #c9a5f7; border: 1px solid #8b5cf644; }
+  .tag-orange { background: #3a2010; color: #f0883e; border: 1px solid #f0883e44; }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 13px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.8px; color: #7d8590; margin-bottom: 16px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .section-title::after {
+    content: ''; flex: 1; height: 1px; background: #21262d;
+  }
+
+  /* GRID */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 40px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 40px; }
+
+  /* CARD */
+  .card {
+    background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 20px;
+  }
+  .card-title {
+    font-size: 14px; font-weight: 600; margin-bottom: 12px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .card-title .icon { font-size: 16px; }
+  .card ul { list-style: none; }
+  .card ul li {
+    font-size: 13px; color: #8b949e; padding: 5px 0;
+    border-bottom: 1px solid #21262d1a; display: flex; align-items: flex-start; gap: 8px;
+  }
+  .card ul li:last-child { border-bottom: none; }
+  .card ul li::before { content: '›'; color: #388bfd; flex-shrink: 0; }
+
+  /* G4 BOX */
+  .g4-box {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-left: 3px solid #56d364;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  .g4-box .g4-title {
+    font-size: 15px; font-weight: 700; color: #56d364; margin-bottom: 4px;
+  }
+  .g4-box .g4-sub { font-size: 12px; color: #7d8590; margin-bottom: 16px; }
+  .g4-rules {
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+  }
+  .g4-rule {
+    background: #161b22; border: 1px solid #21262d; border-radius: 8px;
+    padding: 12px 14px;
+  }
+  .g4-rule .rule-label {
+    font-size: 10px; text-transform: uppercase; letter-spacing: 0.8px;
+    color: #7d8590; margin-bottom: 4px;
+  }
+  .g4-rule .rule-val {
+    font-family: 'Cascadia Code', 'Fira Code', monospace;
+    font-size: 12px; color: #e6edf3;
+  }
+  .g4-rule.danger .rule-val { color: #f85149; }
+  .g4-rule.ok .rule-val { color: #56d364; }
+  .g4-rule.warn .rule-val { color: #e3b341; }
+
+  /* NICHOS */
+  .nichos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 40px; }
+  .nicho {
+    background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+    padding: 16px; text-align: center;
+  }
+  .nicho .nicho-icon { font-size: 24px; margin-bottom: 8px; }
+  .nicho .nicho-name { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+  .nicho .nicho-client { font-size: 11px; color: #7d8590; }
+
+  /* FILE TREE */
+  .tree {
+    background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+    padding: 20px; margin-bottom: 40px;
+    font-family: 'Cascadia Code', 'Fira Code', monospace;
+    font-size: 12px; line-height: 1.8;
+  }
+  .tree .folder { color: #79c0ff; }
+  .tree .file { color: #e6edf3; }
+  .tree .comment { color: #7d8590; }
+  .tree .highlight { color: #56d364; font-weight: 600; }
+
+  /* CLIENTS */
+  .clients { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
+  .client-pill {
+    background: #161b22; border: 1px solid #21262d; border-radius: 20px;
+    padding: 6px 16px; font-size: 13px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .client-pill .dot { width: 6px; height: 6px; border-radius: 50%; }
+  .dot-active { background: #56d364; }
+  .dot-pending { background: #e3b341; }
+
+  /* FLOW MODES */
+  .modes { display: flex; gap: 12px; margin-top: 12px; }
+  .mode {
+    flex: 1; background: #0d1117; border: 1px solid #21262d; border-radius: 8px;
+    padding: 12px 14px; text-align: center;
+  }
+  .mode .mode-name { font-size: 13px; font-weight: 600; color: #e6edf3; }
+  .mode .mode-qty { font-size: 11px; color: #7d8590; margin-top: 2px; }
+
+  /* FOOTER */
+  .footer {
+    text-align: center; color: #7d8590; font-size: 12px;
+    padding-top: 24px; border-top: 1px solid #21262d;
+  }
+  .footer strong { color: #388bfd; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div>
+      <span class="skill-badge">SKILL</span>
+    </div>
+    <div class="header-text">
+      <h1>agencia</h1>
+      <p>Sistema completo de produção de conteúdo — planejamento → copy → arte final</p>
+    </div>
+    <div class="path-badge">
+      <span>Localização</span>
+      ~/Documents/PROJETOS/Rhuan/.claude/skills/agencia/
+    </div>
+  </div>
+
+  <!-- PIPELINE -->
+  <div class="section-title">Pipeline principal</div>
+  <div class="pipeline">
+    <div class="stage stage-1">
+      <div class="stage-num">Etapa 01</div>
+      <div class="stage-title">Planejar Conteúdo</div>
+      <div class="stage-desc">Pesquisa tendências e novidades regulatórias do nicho via Perplexity e propõe pauta completa com hook, ângulo e ancoragem factual.</div>
+      <div class="tags">
+        <span class="tag tag-blue">Perplexity Research</span>
+        <span class="tag tag-blue">Calendário fiscal</span>
+        <span class="tag tag-blue">Anti-repetição</span>
+      </div>
+      <div class="stage-arrow">›</div>
+    </div>
+    <div class="stage stage-2">
+      <div class="stage-num">Etapa 02</div>
+      <div class="stage-title">Produzir Pauta</div>
+      <div class="stage-desc">Gera copy completo: headline, slides do carrossel, legenda, hashtags e brief visual. Inclui roteiro de vídeo quando necessário.</div>
+      <div class="tags">
+        <span class="tag tag-yellow">Carrossel</span>
+        <span class="tag tag-yellow">Post único</span>
+        <span class="tag tag-yellow">Reels</span>
+        <span class="tag tag-yellow">Brief visual</span>
+      </div>
+      <div class="stage-arrow">›</div>
+    </div>
+    <div class="stage stage-3">
+      <div class="stage-num">Etapa 03</div>
+      <div class="stage-title">Criar Arte</div>
+      <div class="stage-desc">Produz os visuais finais. Instagram → G4 Editorial (belt + Pillow). Outros formatos → Canva MCP. Qualidade de capa de revista.</div>
+      <div class="tags">
+        <span class="tag tag-green">G4 Editorial</span>
+        <span class="tag tag-green">Canva MCP</span>
+        <span class="tag tag-green">Gemini Flash Image</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODOS DE PLANEJAMENTO -->
+  <div class="section-title">Modos de planejamento</div>
+  <div class="card" style="margin-bottom:40px">
+    <div class="card-title"><span class="icon">📅</span> Período flexível — semana, quinzena ou mês</div>
+    <div class="modes">
+      <div class="mode">
+        <div class="mode-name">Semana</div>
+        <div class="mode-qty">2–4 pautas</div>
+      </div>
+      <div class="mode">
+        <div class="mode-name">Quinzena</div>
+        <div class="mode-qty">4–8 pautas</div>
+      </div>
+      <div class="mode">
+        <div class="mode-name">Mês</div>
+        <div class="mode-qty">8–16 pautas agrupadas por semana</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- G4 EDITORIAL WORKFLOW -->
+  <div class="section-title">Workflow G4 Editorial — Instagram 1080×1350</div>
+  <div class="g4-box">
+    <div class="g4-title">G4 Editorial Workflow</div>
+    <div class="g4-sub">Validado com Lupa Gestão — abr/2026 · belt + Gemini Flash Image + Pillow</div>
+    <div class="g4-rules">
+      <div class="g4-rule ok">
+        <div class="rule-label">Gradiente</div>
+        <div class="rule-val">start_y_pct = 0.42</div>
+      </div>
+      <div class="g4-rule ok">
+        <div class="rule-label">Safe Zone X</div>
+        <div class="rule-val">200px → 880px</div>
+      </div>
+      <div class="g4-rule ok">
+        <div class="rule-label">Safe Zone Y</div>
+        <div class="rule-val">400px → 950px</div>
+      </div>
+      <div class="g4-rule ok">
+        <div class="rule-label">th() correto</div>
+        <div class="rule-val">return bb[3]</div>
+      </div>
+      <div class="g4-rule danger">
+        <div class="rule-label">Linhas separadoras</div>
+        <div class="rule-val">d.line() — PROIBIDO</div>
+      </div>
+      <div class="g4-rule warn">
+        <div class="rule-label">Blur calendários</div>
+        <div class="rule-val">radius=18 · radius=8</div>
+      </div>
+      <div class="g4-rule ok">
+        <div class="rule-label">Logo (hook)</div>
+        <div class="rule-val">width=130 · opacity=130</div>
+      </div>
+      <div class="g4-rule warn">
+        <div class="rule-label">Paralelismo IA</div>
+        <div class="rule-val">max_workers=2</div>
+      </div>
+      <div class="g4-rule ok">
+        <div class="rule-label">Modelo IA</div>
+        <div class="rule-val">gemini-2-5-flash-image</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NICHOS -->
+  <div class="section-title">Nichos disponíveis</div>
+  <div class="nichos">
+    <div class="nicho">
+      <div class="nicho-icon">🧾</div>
+      <div class="nicho-name">contabilidade</div>
+      <div class="nicho-client">Lupa Gestão ✓</div>
+    </div>
+    <div class="nicho">
+      <div class="nicho-icon">💆</div>
+      <div class="nicho-name">saude-estetica</div>
+      <div class="nicho-client">CFM / CRO</div>
+    </div>
+    <div class="nicho">
+      <div class="nicho-icon">⚙️</div>
+      <div class="nicho-name">b2b-tecnico</div>
+      <div class="nicho-client">Produto técnico / agro</div>
+    </div>
+    <div class="nicho">
+      <div class="nicho-icon">🎓</div>
+      <div class="nicho-name">info-produto</div>
+      <div class="nicho-client">Mentor / consultor</div>
+    </div>
+  </div>
+
+  <!-- CLIENTES -->
+  <div class="section-title">Clientes</div>
+  <div class="clients" style="margin-bottom:40px">
+    <div class="client-pill"><span class="dot dot-active"></span> Lupa Gestão — ativo, piloto</div>
+    <div class="client-pill"><span class="dot dot-pending"></span> + 6 clientes — template pronto, cadastro incremental</div>
+  </div>
+
+  <!-- DOIS GRIDS -->
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title"><span class="icon">🔍</span> Planejar — o que pesquisa</div>
+      <ul>
+        <li>Mudanças regulatórias (últimos 30 dias)</li>
+        <li>Datas fiscais do nicho</li>
+        <li>Tendências de mercado no Brasil</li>
+        <li>Anti-repetição vs. posts publicados</li>
+        <li>Rotação de pilares por ciclo</li>
+        <li>Confiança por pauta (modo mês)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">✍️</span> Produzir — o que entrega</div>
+      <ul>
+        <li>Headline + sub (máx 8 palavras)</li>
+        <li>Slides do carrossel (1 conceito/slide)</li>
+        <li>Legenda + hashtags (5–8)</li>
+        <li>Roteiro de vídeo com timestamps</li>
+        <li>Brief visual pra criar-arte</li>
+        <li>Ancoragem factual verificada</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🎨</span> Arte Instagram — G4 Editorial</div>
+      <ul>
+        <li>Background editorial via Gemini</li>
+        <li>Safe zone 680×550px</li>
+        <li>Gradiente 0.42 para legibilidade</li>
+        <li>Tipos: hook / dark / light / CTA</li>
+        <li>Logo discreta no slide 1</li>
+        <li>Blur em calendários e datas</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🖥️</span> Arte outros formatos — Canva MCP</div>
+      <ul>
+        <li>LinkedIn, Stories, banners</li>
+        <li>Brand kit do cliente</li>
+        <li>Imagem de apoio via Gemini/NanoBanana</li>
+        <li>generate-design-structured</li>
+        <li>Refinamento via perform-editing-operations</li>
+        <li>Export PNG/PDF</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ANTI-GENÉRICO -->
+  <div class="section-title">Princípios anti-genérico</div>
+  <div class="grid-3" style="margin-bottom:40px">
+    <div class="card">
+      <div class="card-title"><span class="icon">🎯</span> Hook específico</div>
+      <ul>
+        <li>Dado, número, data ou contradição</li>
+        <li>Nunca "Você sabia que..."</li>
+        <li>Nunca "3 dicas para..."</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">⚖️</span> Compliance por nicho</div>
+      <ul>
+        <li>Contabilidade: sem conselho individual</li>
+        <li>Saúde: sem promessa de resultado</li>
+        <li>B2B: specs com fonte oficial</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">✋</span> Rhuan aprova tudo</div>
+      <ul>
+        <li>Pauta → aprovação → copy</li>
+        <li>Copy → aprovação → arte</li>
+        <li>Arte → aprovação → publica</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ESTRUTURA DE ARQUIVOS -->
+  <div class="section-title">Estrutura de arquivos</div>
+  <div class="tree">
+    <div><span class="folder">~/.claude/skills/agencia/</span> <span class="comment">← skill ativa</span></div>
+    <div>&nbsp;&nbsp;<span class="highlight">SKILL.md</span> <span class="comment">← orquestrador</span></div>
+    <div>&nbsp;&nbsp;<span class="folder">references/</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">planejar-conteudo.md</span> <span class="comment">← pesquisa + calendário</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">produzir-pauta.md</span> <span class="comment">← copy + roteiro</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">criar-arte.md</span> <span class="comment">← G4 Editorial + Canva</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="file">onboarding-cliente.md</span> <span class="comment">← novo cliente em 30min</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="file">nichos-catalogo.md</span> <span class="comment">← 4 nichos disponíveis</span></div>
+    <br>
+    <div><span class="folder">~/Documents/PROJETOS/Rhuan/</span> <span class="comment">← workspace</span></div>
+    <div>&nbsp;&nbsp;<span class="folder">nichos/</span> <span class="comment">← templates herdáveis</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="folder">contabilidade/</span> <span class="comment">← completo</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="folder">saude-estetica/</span> <span class="comment">← completo</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="folder">b2b-tecnico/</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="folder">info-produto/</span></div>
+    <div>&nbsp;&nbsp;<span class="folder">clientes/</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">lupa-gestao/</span> <span class="comment">← piloto ativo · brand + icp + pilares populados</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="file">brand.md · icp.md · pilares.md</span></div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="folder">logos/ · calendario/ · artes-geradas/ · ja-publicado/</span></div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Skill <strong>agencia</strong> · Priori Digital · Criada abr/2026 · Workflow G4 Editorial validado com Lupa Gestão
+  </div>
+
+</div>
+</body>
+</html>

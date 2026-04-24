@@ -1,0 +1,26 @@
+{
+  "skill_name": "agencia",
+  "evals": [
+    {
+      "id": 0,
+      "name": "planejar-semana",
+      "prompt": "Planeje a semana de conteúdo da Lupa Gestão (contabilidade) para o período 27/abr/2026 a 03/mai/2026. A Lupa publica 3 posts/semana em Instagram + LinkedIn. Preciso das pautas propostas com hook, formato, pilar, ângulo, ancoragem factual, CTA e link/fonte.",
+      "expected_output": "Um calendário editorial em markdown em clientes/lupa-gestao/calendario/2026-04.md (ou equivalente) com 3 pautas estruturadas. Deve usar pesquisa atual (Perplexity), respeitar rotação de pilares, evitar conteúdo sobre Salão Parceiro, e ancorar pelo menos uma pauta em dado/regra verificável.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "produzir-carrossel-dre",
+      "prompt": "Para a Lupa Gestão, produz uma pauta de carrossel de 7 slides sobre 'Como ler o DRE da sua empresa em 5 minutos'. Formato Instagram 1080x1350. Preciso: headline e sub-texto de cada slide, legenda completa do post, roteiro de vídeo curto (reels 30s) com o mesmo tema, e brief visual para a etapa seguinte.",
+      "expected_output": "Arquivo markdown com: 7 slides estruturados (headline, sub, elemento visual, notas), legenda do carrossel com hook/desenvolvimento/CTA/hashtags, roteiro do reels (gancho, desenvolvimento, CTA, notas de gravação), e brief visual estruturado. Tom Lupa (técnico acessível, sem juridiquês pesado). Guardrails de contabilidade respeitados (sem conselho individual, sem promessa).",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "post-irpf-video",
+      "prompt": "Para a Lupa Gestão, crie um post único estático + roteiro de reels de 30s sobre o prazo final do IRPF 2026 (vence 30/05/2026). Público: donos de PME que ainda não entregaram. Preciso da headline do post, legenda completa com hashtags, roteiro do reels e brief visual.",
+      "expected_output": "Arquivo markdown com: headline curta e impactante (max 8 palavras), legenda estruturada (hook/desenvolvimento/CTA/hashtags), roteiro de reels com gancho-desenvolvimento-CTA + notas de gravação, e brief visual. Tom Lupa, linguagem do ICP PME, hook específico com data/dado. Sem promessa de economia.",
+      "files": []
+    }
+  ]
+}
