@@ -40,18 +40,21 @@
   .header-text p {
     color: #7d8590; font-size: 14px; margin-top: 4px;
   }
-  .path-badge {
+  .download-btn {
     margin-left: auto;
-    background: #161b22;
-    border: 1px solid #30363d;
+    background: linear-gradient(135deg, #238636, #2ea043);
+    border: 1px solid #2ea04344;
     border-radius: 8px;
-    padding: 10px 16px;
-    font-family: 'Cascadia Code', 'Fira Code', monospace;
-    font-size: 12px;
-    color: #79c0ff;
+    padding: 12px 22px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
     white-space: nowrap;
+    display: flex; align-items: center; gap: 8px;
+    transition: opacity 0.15s;
   }
-  .path-badge span { color: #7d8590; display: block; font-size: 10px; margin-bottom: 3px; }
+  .download-btn:hover { opacity: 0.85; }
 
   /* PIPELINE */
   .pipeline {
@@ -224,10 +227,9 @@
       <h1>agencia</h1>
       <p>Sistema completo de produção de conteúdo — planejamento → copy → arte final</p>
     </div>
-    <div class="path-badge">
-      <span>Localização</span>
-      ~/Documents/PROJETOS/Rhuan/.claude/skills/agencia/
-    </div>
+    <a class="download-btn" href="https://github.com/rhuangoulart05/priori-agencia-skill" target="_blank">
+      ⬇ Baixe agora a skill agencia
+    </a>
   </div>
 
   <!-- PIPELINE -->
