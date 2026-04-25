@@ -2,20 +2,53 @@
 
 Transforma copy + brief visual em peças finais exportadas.
 
-## Duas vias visuais — quando usar cada uma
+## Três vias visuais — quando usar cada uma
 
 | Situação | Via |
 |---|---|
-| Instagram carrossel/post premium (1080×1350) | **G4 Editorial** (belt + Pillow) |
+| Instagram **carrossel** (múltiplos slides, copy denso) | **G4 Editorial** (belt + Pillow) |
+| Instagram **post único** com composição visual rica (flyer, evento, save the date, lançamento) | **ChatGPT** (GPT-4o image generation) |
 | LinkedIn, Facebook, Stories, formatos variados | **Canva MCP** |
 | Post simples só texto, sem foto | **Canva MCP** puro |
-| Reel cover | **Canva** com imagem do Gemini/NanoBanana |
+| Reel cover | **Canva** com imagem de apoio |
 
-**Regra geral:** Instagram 4:5 → G4 Editorial. Outros formatos → Canva. Se o cliente tiver identidade visual muito distinta do estilo editorial, discuta com o usuário antes.
+**Regra geral:**
+- Carrossel → G4 Editorial (controle total do copy slide a slide)
+- Post único com identidade visual forte / composição artística → ChatGPT (aceita logo como input, gera composição completa de uma vez)
+- Outros formatos → Canva
 
 ---
 
-## Via 1 — G4 Editorial (Instagram 1080×1350)
+## Via ChatGPT — Post único (flyer, evento, save the date)
+
+Melhor opção para posts únicos com composição visual rica. O GPT-4o aceita a logo do cliente como imagem de input e gera a arte completa — ilustração, tipografia, elementos decorativos e foto fundidos em uma só geração.
+
+### Como usar
+
+1. **Abra o ChatGPT** (GPT-4o com geração de imagem ativa)
+2. **Suba a logo do cliente** como imagem no chat
+3. **Descreva a arte** com:
+   - O que é (flyer de evento, save the date, post de lançamento...)
+   - Textos que devem aparecer (título, data, subtítulo, CTA)
+   - Paleta de cores (HEX ou descrição)
+   - Estilo visual (moderno, orgânico, minimalista, religioso, corporativo...)
+   - Formato: 1080×1350px (4:5 Instagram)
+4. **Instrução obrigatória:** diga explicitamente "use a logo que enviei, não acrescente nada além do que pedi"
+5. **Itere** se precisar — peça ajustes mantendo o mesmo chat
+
+### O que funciona bem no ChatGPT
+- Composições completas com texto integrado à imagem
+- Elementos decorativos coerentes com o tema (folhas, formas, texturas)
+- Fusão de foto + ilustração + tipografia em uma geração
+- Uso correto de logo fornecida como referência
+
+### O que NÃO delegar ao ChatGPT
+- Carrosseis (copy denso, múltiplos slides) → G4 Editorial
+- Quando precisar de controle preciso de tipografia/brand kit → Canva
+
+---
+
+## Via 1 — G4 Editorial (Instagram 1080×1350 carrossel)
 
 Método validado com a Lupa Gestão (abr/2026). Resultado: qualidade de capa de revista, controle total do layout, sem depender de templates genéricos.
 
