@@ -1,6 +1,6 @@
 ---
 name: teologia-reformada
-description: Monta a LITURGIA que o pastor/pregador vai conduzir sobre um texto bíblico. Use SEMPRE que o usuário pedir "liturgia", "monta uma liturgia", "liturgia sobre o texto X", "liturgia do Salmo/capítulo Y". NÃO escreve sermão nem transcreve o texto bíblico (o usuário lê da própria Bíblia) e NÃO escolhe hinos. Entrega duas coisas: (A) a CONTEXTUALIZAÇÃO do texto — contexto histórico, situação do autor, gênero, imagens, estrutura e analogias com outras passagens, explicada para o usuário entender — e (B) o ROTEIRO em dois momentos, com o que o usuário LÊ e o que ele FALA (roteiro em primeira pessoa, pronto para conduzir).
+description: Monta a LITURGIA que o pastor/pregador vai conduzir sobre um texto bíblico. Use SEMPRE que o usuário pedir "liturgia", "monta uma liturgia", "liturgia sobre o texto X", "liturgia do Salmo/capítulo Y". NÃO escreve sermão nem transcreve o texto bíblico (o usuário lê da própria Bíblia) e NÃO escolhe hinos. Entrega duas coisas: (A) a CONTEXTUALIZAÇÃO do texto — contexto histórico, situação do autor, gênero, imagens, estrutura e analogias com outras passagens, explicada para o usuário entender — e (B) o ROTEIRO em dois momentos, com o que o usuário LÊ e o que ele FALA (roteiro em primeira pessoa, pronto para conduzir). ENTREGA FINAL EM PDF, com as partes que ele não pode deixar de falar destacadas em cor (amarelo).
 ---
 
 # Teologia Reformada — Liturgia sobre um texto
@@ -49,6 +49,22 @@ O output é **um arquivo em duas partes**:
 
 Modelo completo e checklist em `references/contexto-e-roteiro.md`.
 
+## Entrega final: PDF com destaques (padrão)
+
+A entrega final é sempre um **PDF**, e **as partes que o usuário não pode deixar de falar vêm
+destacadas com cor de fundo (amarelo)**. Destaque com parcimônia — só as frases-chave das
+falas (e uns poucos fatos essenciais do contexto); se destacar tudo, nada se destaca.
+
+Método (HTML → PDF, mantém o destaque colorido):
+1. Escreva o conteúdo em **HTML** com CSS de impressão (A4), usando `<mark>` nas frases
+   essenciais. Modelo de HTML/CSS: veja o exemplo em `assets/liturgia-template.html`.
+2. Converta com **WeasyPrint**: `weasyprint entrada.html liturgias/AAAA-MM-DD-<tema>.pdf`
+   (ou `python3 -c "import weasyprint; weasyprint.HTML('in.html').write_pdf('out.pdf')"`).
+   Se o WeasyPrint faltar, `pip install weasyprint`. Alternativa: Chromium headless
+   `--print-to-pdf`.
+3. Salve o PDF em `liturgias/`, confira o render (1 página por vez) e **entregue o PDF ao usuário**.
+Mantenha também o `.md` fonte no repositório para edições futuras.
+
 ## Como construir a contextualização (Parte A)
 
 Cobrir, na medida em que o texto permite (não force o que não há):
@@ -72,8 +88,10 @@ Cobrir, na medida em que o texto permite (não force o que não há):
 ## Primeiro passo quando o usuário invocar
 1. **Qual o texto?** (o texto-tema do Momento 2). Se não veio, pergunte só isso.
 2. **Versículo de abertura:** ele já tem um, ou quer que eu sugira? (sugira um coerente).
-3. Monte **Parte A (contexto)** + **Parte B (roteiro)** e salve em `liturgias/AAAA-MM-DD-<tema>.md`.
-4. Mostre e **pare para aprovação**.
+3. Monte **Parte A (contexto)** + **Parte B (roteiro)**, salve o `.md` fonte em
+   `liturgias/AAAA-MM-DD-<tema>.md` e **gere o PDF com destaques** em
+   `liturgias/AAAA-MM-DD-<tema>.pdf` (ver "Entrega final: PDF com destaques").
+4. **Entregue o PDF** ao usuário e **pare para aprovação**.
 
 ## O que a skill NÃO faz
 - Não escreve sermão, não transcreve o texto bíblico, não escolhe hinos.
