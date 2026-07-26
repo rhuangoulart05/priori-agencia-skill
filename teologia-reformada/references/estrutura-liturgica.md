@@ -41,7 +41,7 @@ marcados *(opcional)* entram conforme a ocasião.
 
 ## Movimento 3 — Edificação / Consagração
 
-> O povo professa a fé e se consagra; Deus fala pela leitura e pregação da Palavra.
+> O povo professa a fé e se consagra; Deus fala pela **leitura** da Palavra (padrão sem pregação).
 
 9. **Confissão de Fé** *[Povo responde]* — símbolo reformado: Credo Apostólico, Credo
    Niceno, ou pergunta/resposta de catecismo (Heidelberg P.1; Breve Catecismo P.1).
@@ -52,11 +52,19 @@ marcados *(opcional)* entram conforme a ocasião.
 11. **Dízimos e Ofertas** *[Povo responde]* — culto de gratidão e mordomia (2Co 9.6-8).
     Pode seguir-se **doxologia** (ex.: "Ao Deus de Abraão louvai" / Glória ao Pai).
 12. **Oração de Iluminação** *[Povo responde]* — pede o Espírito para iluminar a Palavra
-    pregada e ouvida (Sl 119.18). Curta, imediatamente antes das leituras/pregação.
-13. **Leitura das Escrituras** *[Deus fala]* — idealmente um texto do AT e um do NT.
-    O texto da pregação é lido aqui (ou logo antes do sermão).
-14. **Pregação da Palavra** *[Deus fala]* — centro do culto (2Tm 4.2). A skill registra
-    **texto, tema e (se pedido) esboço**; o conteúdo é do pregador.
+    lida e ouvida (Sl 119.18). Curta, imediatamente antes das leituras.
+13. **Primeira Leitura (complementar)** *[Deus fala]* — texto que prepara o tema do dia
+    (frequentemente AT; pode ser NT).
+14. **Segunda Leitura — Leitura Principal** *[Deus fala]* — o **texto-tema do culto**,
+    lido na íntegra, **imediatamente antes do louvor de resposta** (item 15). É o ponto
+    alto da ministração da Palavra.
+
+> **Formato padrão deste usuário: culto SEM pregação.** A Palavra é ministrada pelas
+> **duas leituras**, sendo a **segunda a principal** (o texto-tema), logo antes do louvor.
+> A skill **não escreve sermão** e não inclui item de "Pregação da Palavra", salvo pedido
+> explícito. *(Variante opcional: se o usuário pedir pregação, o texto-tema é lido e
+> segue-se a "Pregação da Palavra" [Deus fala] como centro — 2Tm 4.2 — com o pregador
+> responsável pelo conteúdo.)*
 
 ---
 
@@ -64,8 +72,8 @@ marcados *(opcional)* entram conforme a ocasião.
 
 > O povo responde à Palavra; participa da mesa (quando há); é enviado e abençoado.
 
-15. **Cântico / Hino de Resposta** *[Povo responde]* — responde ao tema pregado
-    (consagração, decisão, missão).
+15. **Louvor / Hino de Resposta** *[Povo responde]* — resposta à Palavra lida,
+    especialmente à leitura principal (item 14). Vem **logo após a segunda leitura**.
 16. **Santa Ceia do Senhor** *(opcional — quando celebrada)* — movimento sacramental:
     - **Convite à Mesa** *[Deus fala]* — mesa do Senhor, para os que creem e se examinam.
     - **Palavras da Instituição** *[Deus fala]* — 1Co 11.23-26 lidas.

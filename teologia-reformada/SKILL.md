@@ -39,8 +39,13 @@ base bíblica e exemplos em `references/estrutura-liturgica.md`.
 |---|---|---|
 | **1. Preparação / Adoração** | Chamado à adoração, invocação, cântico de adoração | Deus chama → povo louva |
 | **2. Contrição** | Lei de Deus, confissão de pecados, garantia do perdão | Deus convence → povo confessa → Deus perdoa |
-| **3. Edificação / Consagração** | Confissão de fé, oração pastoral, ofertas, oração de iluminação, leituras, **pregação** | povo professa → Deus fala na Palavra |
-| **4. Comunhão / Despedida** | Resposta, **Santa Ceia** (quando há), cântico final, **bênção apostólica** | povo responde → Deus envia e abençoa |
+| **3. Edificação / Consagração** | Confissão de fé, oração pastoral, ofertas, oração de iluminação, **duas leituras** (a 2ª é a principal) | povo professa → Deus fala na Palavra |
+| **4. Comunhão / Despedida** | **Louvor de resposta**, **Santa Ceia** (quando há), **bênção apostólica** | povo responde → Deus envia e abençoa |
+
+> **Formato padrão deste usuário: culto SEM pregação.** A Palavra é ministrada por **duas
+> leituras**; a **segunda é a principal** (o texto-tema do culto) e vem **logo antes do
+> louvor de resposta**. A skill **não escreve sermão** e não inclui item de pregação,
+> salvo pedido explícito.
 
 ## Mental model — por que é estruturada assim
 
@@ -70,7 +75,7 @@ base bíblica e exemplos em `references/estrutura-liturgica.md`.
 2. **Chamado e garantia são Escritura citada** — com referência (livro, cap., verso).
 3. **Confissão de fé é símbolo real** — Credo Apostólico, Niceno, ou pergunta/resposta
    de catecismo, transcrita corretamente.
-4. **Coerência com a pregação** — se o sermão é sobre graça, o culto inteiro respira graça.
+4. **Coerência com o texto-tema** — se a leitura principal é sobre graça, o culto inteiro respira graça.
 5. **Hinos por tema, não por hábito** — escolha pelo conteúdo doutrinário que serve ao
    movimento (adoração ≠ gratidão ≠ consagração). Cite por título; confirme o número no
    hinário local (não invente número de hino).
@@ -81,7 +86,9 @@ Antes de montar, confirme (pergunte só o que faltar):
 
 1. **Tradição/igreja** — IPB? Outra presbiteriana/reformada? (padrão: IPB)
 2. **Data e ocasião** — domingo comum? Ceia? Data especial (Reforma, Natal, Páscoa, Pentecostes)?
-3. **Texto/tema da pregação** — qual passagem? (define a coerência de tudo)
+3. **Texto-tema (leitura principal)** — qual passagem? É a **segunda leitura**, lida antes
+   do louvor, e define a coerência de todo o culto. *(Padrão sem pregação; peça o texto da
+   1ª leitura complementar ou proponha um coerente.)*
 4. **Tem Santa Ceia?** — se sim, inclui o movimento sacramental (instituição, convite, oração).
 5. **Hinário** — Novo Cântico? Saltério? Outro?
 
@@ -97,7 +104,8 @@ e **pare para aprovação** antes de considerar concluído.
 
 ## O que a skill NÃO faz
 
-- Não escreve o sermão (entrega esboço/estrutura só se pedido explicitamente).
+- **Não inclui pregação/sermão** (formato padrão). A ministração da Palavra são as duas
+  leituras. Só monta pregação se o usuário pedir explicitamente.
 - Não inventa número de hino nem texto de confissão — se não tiver certeza, cita por
   título/referência e marca para conferência.
 - Não impõe calendário litúrgico onde a igreja não observa; pergunta antes.
