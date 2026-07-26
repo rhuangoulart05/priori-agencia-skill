@@ -1,111 +1,81 @@
 ---
 name: teologia-reformada
-description: Sistema de produção de liturgias para o culto reformado. Use SEMPRE que o usuário pedir para criar/montar uma liturgia, ordem de culto, "culto de domingo", "liturgia de domingo", liturgia de Ceia, liturgia de Natal/Páscoa/Reforma, ou pedir oração de adoração/confissão/iluminação/pastoral, leitura responsiva, confissão de fé, ou bênção apostólica. Monta o culto seguindo o princípio dialógico (Deus chama, o povo responde) e o princípio regulador do culto, ancorando cada elemento na Escritura e nas confissões reformadas (Westminster, Heidelberg, Belga, Dort). Padrão IPB/presbiteriano com hinário Novo Cântico + Saltério, mas parametrizável por tradição reformada.
+description: Monta a LITURGIA que o pastor/pregador vai conduzir sobre um texto bíblico. Use SEMPRE que o usuário pedir "liturgia", "monta uma liturgia", "liturgia sobre o texto X", "liturgia do Salmo/capítulo Y". NÃO escreve sermão nem transcreve o texto bíblico (o usuário lê da própria Bíblia) e NÃO escolhe hinos. Entrega duas coisas: (A) a CONTEXTUALIZAÇÃO do texto — contexto histórico, situação do autor, gênero, imagens, estrutura e analogias com outras passagens, explicada para o usuário entender — e (B) o ROTEIRO em dois momentos, com o que o usuário LÊ e o que ele FALA (roteiro em primeira pessoa, pronto para conduzir).
 ---
 
-# Teologia Reformada — Produção de Liturgia para o Culto
+# Teologia Reformada — Liturgia sobre um texto
 
-## O que essa skill resolve
+## O que o usuário quer (leia isto e obedeça — já erramos aqui antes)
 
-Montar a **ordem do culto** (liturgia) de um domingo (ou data especial) demanda tempo
-e cuidado teológico: cada elemento precisa de base bíblica, os textos precisam
-conversar entre si, as orações não podem ser genéricas e a estrutura precisa
-respeitar a tradição reformada. Essa skill entrega a liturgia **90% pronta** —
-estruturada, ancorada na Escritura e nas confissões — para o pastor/presbítero
-revisar, ajustar a pregação e aprovar.
+Quando ele pede "liturgia", ele **NÃO** quer um culto reformado completo com orações,
+confissões, ofertas e bênção. Ele quer um material enxuto para **conduzir sobre um texto**:
 
-Ela **não** substitui o ministro: o sermão, a escolha final dos hinos e as decisões
-pastorais são dele. A skill prepara o andaime e preenche o que é repetível.
+1. **Contextualização do texto — para ELE entender.** Contexto histórico, situação do
+   autor no momento em que escreveu, gênero, sentido das imagens, estrutura do texto e
+   **analogias com outras passagens**. É estudo, explicado de forma clara.
+2. **Roteiro em dois momentos** — o que ele **lê** e o que ele **fala** (as palavras dele,
+   em primeira pessoa, prontas para falar).
 
-## Dois princípios inegociáveis (a skill obedece sempre)
+### Regras inegociáveis
+- **NÃO escrever o texto bíblico.** Ele lê da própria Bíblia. Você dá a referência.
+- **NÃO escrever sermão.** Você dá a *fala* dele — comentário/contextualização falada, curta.
+- **NÃO escolher hinos.** O hino é escolhido por eles. No roteiro, marque `→ HINO (vocês escolhem)`.
+- **Você entrega o que ELE fala**, não um texto teológico impessoal. Roteiro em 1ª pessoa,
+  linguagem falada, para ele ler/conduzir.
 
-1. **Princípio regulador do culto (RPW)** — só entra na liturgia o que a Escritura
-   ordena ou autoriza por bom e necessário consequente. Nada de elemento "porque é
-   bonito". Ref.: Confissão de Fé de Westminster (CFW) XXI.1.
+## A estrutura fixa dos dois momentos
 
-2. **Princípio dialógico** — o culto é diálogo de aliança: **Deus fala, o povo responde.**
-   - *Deus fala:* chamado à adoração, lei, garantia do perdão, leitura e pregação da
-     Palavra, sacramentos, bênção.
-   - *O povo responde:* louvor, confissão de pecados, confissão de fé, orações,
-     ofertas, votos.
-   Toda liturgia gerada deve deixar claro **quem está falando** em cada momento.
+Sempre a mesma. Não invente etapas.
 
-## Estrutura canônica (4 movimentos)
-
-A skill organiza o culto em quatro movimentos. Detalhe de cada elemento, propósito,
-base bíblica e exemplos em `references/estrutura-liturgica.md`.
-
-| Movimento | O que acontece | Quem fala |
+| | O que acontece | Quem faz |
 |---|---|---|
-| **1. Preparação / Adoração** | Chamado à adoração, invocação, cântico de adoração | Deus chama → povo louva |
-| **2. Contrição** | Lei de Deus, confissão de pecados, garantia do perdão | Deus convence → povo confessa → Deus perdoa |
-| **3. Edificação / Consagração** | Confissão de fé, oração pastoral, ofertas, oração de iluminação, **duas leituras** (a 2ª é a principal) | povo professa → Deus fala na Palavra |
-| **4. Comunhão / Despedida** | **Louvor de resposta**, **Santa Ceia** (quando há), **bênção apostólica** | povo responde → Deus envia e abençoa |
+| **Momento 1 — Abertura** | Ele **lê um versículo** de abertura + faz um **comentário rápido** (~30s) | usuário lê + fala |
+| **→ HINO** | Cântico de entrada | *vocês escolhem (não sugerir)* |
+| **Momento 2 — Texto principal** | Ele **lê o texto-tema** (ex.: Salmo 1) + **fala sobre o texto**, usando a contextualização | usuário lê + fala |
 
-> **Formato padrão deste usuário: culto SEM pregação.** A Palavra é ministrada por **duas
-> leituras**; a **segunda é a principal** (o texto-tema do culto) e vem **logo antes do
-> louvor de resposta**. A skill **não escreve sermão** e não inclui item de pregação,
-> salvo pedido explícito.
+O **texto principal do Momento 2** é o texto que o usuário deu. O **versículo do Momento 1**
+é um versículo curto que "puxa" o tema do texto principal — sugira um, mas deixe claro que
+ele pode trocar.
 
-## Mental model — por que é estruturada assim
+## O formato de entrega (sempre duas partes)
 
-1. **Diálogo, não programa** — a ordem não é uma lista de "atrações"; é a lógica da
-   aliança. Por isso cada elemento é rotulado com *Deus fala* ou *povo responde*.
+O output é **um arquivo em duas partes**:
 
-2. **Tudo ancorado** — todo chamado, garantia de perdão e bênção é **texto bíblico
-   citado** (não paráfrase solta). Confissão de fé vem de um símbolo reformado real.
-   Ver princípios anti-genérico abaixo.
+- **PARTE A — Contexto (para você entender):** as seções de contextualização (ver checklist
+  em `references/contexto-e-roteiro.md`). É onde vão o histórico, o autor, a estrutura e as
+  analogias — explicados **para o usuário**, não para a congregação.
+- **PARTE B — Roteiro do culto:** Momento 1 (versículo + fala) → HINO → Momento 2 (leitura +
+  fala). A **fala** do Momento 2 destila a Parte A em linguagem falada, em 1ª pessoa.
 
-3. **Coerência temática** — chamado, salmo, hinos, confissão e leituras devem
-   convergir com o **texto da pregação**. A skill pede o texto/tema do sermão *antes*
-   de montar, e escolhe os demais elementos para conversar com ele.
+Modelo completo e checklist em `references/contexto-e-roteiro.md`.
 
-4. **Confessionalismo como repertório** — Westminster (Confissão, Catecismo Maior e
-   Breve), Catecismo de Heidelberg, Confissão Belga e Cânones de Dort são fonte de
-   leituras responsivas e confissões de fé. Catálogo em
-   `references/confissoes-e-catecismos.md`.
+## Como construir a contextualização (Parte A)
 
-5. **Parametrizável por tradição** — padrão é IPB (Westminster + Novo Cântico), mas
-   suporta outras igrejas reformadas/presbiterianas. Pergunte a tradição se não for óbvia.
+Cobrir, na medida em que o texto permite (não force o que não há):
+1. **Onde o texto está** e sua função no livro.
+2. **Autor e situação histórica** — quem escreveu (ou a leitura mais aceita, se anônimo) e em
+   que circunstância. Seja honesto sobre incerteza (ex.: salmo sem título → dizer que é anônimo).
+3. **Gênero** — narrativa, poesia, sabedoria, carta, profecia… muda o jeito de ler.
+4. **Imagens e pano de fundo cultural** — o sentido concreto das figuras na época.
+5. **Estrutura** — o "mapa" dos versículos (blocos e virada).
+6. **Analogias com outros textos** — 3 a 5 passagens que iluminam o texto (ecos verbais,
+   temas gêmeos, cumprimento no NT).
+7. **Leitura em Cristo** — como o texto aponta para o evangelho (chave reformada).
 
-## Princípios anti-genérico (todo output passa por esses filtros)
-
-1. **Sem oração-clichê** — nada de "Senhor, te agradecemos por mais um dia". Orações
-   carregam conteúdo bíblico-teológico concreto (atributo de Deus, ato redentor, promessa).
-2. **Chamado e garantia são Escritura citada** — com referência (livro, cap., verso).
-3. **Confissão de fé é símbolo real** — Credo Apostólico, Niceno, ou pergunta/resposta
-   de catecismo, transcrita corretamente.
-4. **Coerência com o texto-tema** — se a leitura principal é sobre graça, o culto inteiro respira graça.
-5. **Hinos por tema, não por hábito** — escolha pelo conteúdo doutrinário que serve ao
-   movimento (adoração ≠ gratidão ≠ consagração). Cite por título; confirme o número no
-   hinário local (não invente número de hino).
+## Precisão (importante)
+- **Não invente** autoria, data ou fato histórico. Se a datação/autoria é discutida, diga
+  isso e apresente a leitura majoritária.
+- **Não invente** número de versículo nem cita errado. Confira as referências.
+- Mantenha a teologia **reformada** (soberania de Deus, graça, Cristo no centro), mas o foco
+  é servir a exposição do texto, não empurrar jargão.
 
 ## Primeiro passo quando o usuário invocar
-
-Antes de montar, confirme (pergunte só o que faltar):
-
-1. **Tradição/igreja** — IPB? Outra presbiteriana/reformada? (padrão: IPB)
-2. **Data e ocasião** — domingo comum? Ceia? Data especial (Reforma, Natal, Páscoa, Pentecostes)?
-3. **Texto-tema (leitura principal)** — qual passagem? É a **segunda leitura**, lida antes
-   do louvor, e define a coerência de todo o culto. *(Padrão sem pregação; peça o texto da
-   1ª leitura complementar ou proponha um coerente.)*
-4. **Tem Santa Ceia?** — se sim, inclui o movimento sacramental (instituição, convite, oração).
-5. **Hinário** — Novo Cântico? Saltério? Outro?
-
-Com isso, leia `references/estrutura-liturgica.md` e monte. Para orações e seleção de
-hinos/salmos, use `references/oracoes-e-hinos.md`. Para confissões/catecismos, use
-`references/confissoes-e-catecismos.md`.
-
-## Onde salvar o output
-
-A liturgia final vai em `liturgias/AAAA-MM-DD-<ocasiao>.md` (ex:
-`liturgias/2026-06-28-domingo.md`), pronta para impressão/projeção. Mostre ao usuário
-e **pare para aprovação** antes de considerar concluído.
+1. **Qual o texto?** (o texto-tema do Momento 2). Se não veio, pergunte só isso.
+2. **Versículo de abertura:** ele já tem um, ou quer que eu sugira? (sugira um coerente).
+3. Monte **Parte A (contexto)** + **Parte B (roteiro)** e salve em `liturgias/AAAA-MM-DD-<tema>.md`.
+4. Mostre e **pare para aprovação**.
 
 ## O que a skill NÃO faz
-
-- **Não inclui pregação/sermão** (formato padrão). A ministração da Palavra são as duas
-  leituras. Só monta pregação se o usuário pedir explicitamente.
-- Não inventa número de hino nem texto de confissão — se não tiver certeza, cita por
-  título/referência e marca para conferência.
-- Não impõe calendário litúrgico onde a igreja não observa; pergunta antes.
+- Não escreve sermão, não transcreve o texto bíblico, não escolhe hinos.
+- Não monta culto reformado completo (orações, confissões, ofertas, Ceia, bênção) — a menos
+  que o usuário peça explicitamente por "culto completo".
