@@ -2,11 +2,13 @@
 <style>
   @page { size: A4; margin: 15mm 14mm; }
   * { box-sizing: border-box; }
-  body { font-family:"Georgia","Times New Roman",serif; color:#1a1a1a; font-size:10.4pt; line-height:1.42; margin:0; }
+  body { font-family:"Georgia","Times New Roman",serif; color:#1a1a1a; font-size:10.4pt; line-height:1.46; margin:0; }
   h1 { font-size:18pt; margin:0 0 2px; color:#1b3a5b; }
   .sub { color:#55606b; font-size:9.4pt; margin:0 0 8px; }
   .central { background:#1b3a5b; color:#fff; border-radius:4px; padding:9px 12px; margin:8px 0; font-size:10.4pt; }
   .central b { color:#ffe27a; }
+  .howto { background:#eef4ee; border:1px solid #bcd6bc; border-radius:4px; padding:8px 12px; margin:8px 0; font-size:9.6pt; }
+  .howto b { color:#2c5a2c; }
   .legend { font-family:sans-serif; font-size:8.6pt; color:#55606b; margin:5px 0; }
   .chip { padding:0 5px; border-radius:3px; }
   table.time { width:100%; border-collapse:collapse; font-family:sans-serif; font-size:8.8pt; margin:7px 0; }
@@ -16,14 +18,15 @@
   .partbar { background:#1b3a5b; color:#fff; padding:5px 10px; margin:14px 0 6px; font-size:11.5pt; font-weight:bold; border-radius:3px; }
   .partbar .dur { float:right; font-family:sans-serif; font-size:8.6pt; font-weight:normal; background:#ffe27a; color:#1b3a5b; padding:1px 8px; border-radius:10px; }
   .rec { font-family:sans-serif; font-size:8.4pt; color:#55606b; margin:0 0 5px; }
-  h3 { font-size:10.4pt; color:#7a3e00; margin:10px 0 3px; }
+  h3 { font-size:10.6pt; color:#7a3e00; margin:11px 0 3px; }
   p { margin:3px 0; }
-  .aluno { background:#f0f2f4; border:1px solid #d3d9de; border-radius:3px; padding:6px 10px; margin:5px 0; font-size:9.8pt; text-align:justify; }
-  .aluno .tag { font-family:sans-serif; font-size:7.8pt; font-weight:bold; letter-spacing:.5px; color:#5a6570; text-transform:uppercase; display:block; margin-bottom:2px; }
-  .say { border-left:4px solid #1b3a5b; background:#f5f8fb; padding:6px 10px; margin:5px 0; border-radius:0 3px 3px 0; }
-  .say .who { font-family:sans-serif; font-size:8.2pt; text-transform:uppercase; letter-spacing:.5px; color:#1b3a5b; font-weight:bold; display:block; margin-bottom:2px; }
-  .ilu { font-size:9.4pt; color:#4a3a1a; background:#fbf3e8; border-left:4px solid #d9a25a; padding:5px 10px; margin:5px 0; border-radius:0 3px 3px 0; }
-  .ilu b { color:#7a3e00; }
+  .aluno { background:#f0f2f4; border:1px solid #d3d9de; border-radius:3px; padding:6px 10px; margin:5px 0; font-size:9.3pt; color:#40484f; text-align:justify; }
+  .aluno .tag { font-family:sans-serif; font-size:7.6pt; font-weight:bold; letter-spacing:.5px; color:#5a6570; text-transform:uppercase; display:block; margin-bottom:2px; }
+  .curta { background:#fff8e6; border-left:4px solid #e0a92e; padding:5px 10px; margin:5px 0 3px; font-size:9.7pt; border-radius:0 3px 3px 0; text-align:justify; }
+  .curta .who { font-family:sans-serif; font-size:7.8pt; text-transform:uppercase; letter-spacing:.5px; color:#8a6516; font-weight:bold; display:block; margin-bottom:2px; }
+  .say { border-left:4px solid #1b3a5b; background:#f5f8fb; padding:7px 11px; margin:3px 0 5px; border-radius:0 3px 3px 0; text-align:justify; }
+  .say .who { font-family:sans-serif; font-size:8.2pt; text-transform:uppercase; letter-spacing:.5px; color:#1b3a5b; font-weight:bold; display:block; margin-bottom:3px; }
+  .say .ilu { color:#7a3e00; font-weight:bold; }
   mark { background:#ffe27a; padding:1px 2px; border-radius:2px; box-decoration-break:clone; }
   .grupo { background:#f7f7f5; border:1px solid #e2e2dc; border-radius:3px; padding:6px 9px; margin:5px 0; font-size:9.4pt; }
   .grupo .g { font-family:sans-serif; font-weight:bold; color:#1b3a5b; font-size:8.8pt; }
@@ -31,14 +34,19 @@
   .adapt { font-family:sans-serif; font-size:8.4pt; color:#7a3e00; background:#fbf3e8; border:1px dashed #d9a25a; padding:5px 9px; border-radius:3px; margin:7px 0; }
 </style>
 
-<h1>Guia Combinado — Lição 1: Uma Mensagem Urgente</h1>
-<p class="sub">Professor + Aluno &nbsp;·&nbsp; O poder do evangelho para salvar um mundo perdido &nbsp;·&nbsp;
-<b>Romanos 1.1-32</b> &nbsp;·&nbsp; Adultos (EBD) &nbsp;·&nbsp; 40 min</p>
+<h1>Guia do Professor — Lição 1: Uma Mensagem Urgente</h1>
+<p class="sub">O poder do evangelho para salvar um mundo perdido &nbsp;·&nbsp; <b>Romanos 1.1-32</b> &nbsp;·&nbsp;
+Adultos (EBD) &nbsp;·&nbsp; 40 min</p>
+
+<div class="howto"><b>Como usar:</b> em cada seção você tem <b>duas falas</b> — a <b>curta</b> (a essência, pra
+bater o olho e não esquecer o ponto) e a <b>completa</b> (o roteiro de 2–3 min, pronto pra falar). Use a
+completa pra conduzir; a curta é seu guia rápido. As <b>caixas cinza</b> são só <b>referência</b> do que está
+na apostila do aluno (não precisa ler em voz alta).</div>
 <p class="legend">
-<span class="chip" style="background:#f0f2f4;border:1px solid #d3d9de;">Lição do Aluno</span> = o que o aluno tem na mão (siga à risca) &nbsp;·&nbsp;
-<span class="chip" style="background:#f5f8fb;border-left:3px solid #1b3a5b;">O que você fala</span> &nbsp;·&nbsp;
-<span class="chip" style="background:#fbf3e8;border-left:3px solid #d9a25a;">Ilustração</span> &nbsp;·&nbsp;
-<mark>amarelo</mark> = não pode faltar.</p>
+<span class="chip" style="background:#f0f2f4;border:1px solid #d3d9de;">Cinza = Lição do Aluno</span> &nbsp;·&nbsp;
+<span class="chip" style="background:#fff8e6;border-left:3px solid #e0a92e;">Amarela = fala CURTA</span> &nbsp;·&nbsp;
+<span class="chip" style="background:#f5f8fb;border-left:3px solid #1b3a5b;">Azul = fala COMPLETA</span> &nbsp;·&nbsp;
+<mark>destaque</mark> = não pode faltar.</p>
 
 <div class="central"><b>VOCÊ DEVE COMUNICAR QUE:</b> o evangelho é a única mensagem capaz de salvar uma
 humanidade perdida, e é dever da igreja proclamá-lo ao mundo.</div>
@@ -46,7 +54,7 @@ humanidade perdida, e é dever da igreja proclamá-lo ao mundo.</div>
 <table class="time">
   <tr><th>Parte</th><th>Atividade</th><th>Tempo</th></tr>
   <tr><td>1ª</td><td>Convidar (gancho)</td><td class="t">5 min</td></tr>
-  <tr><td>2ª</td><td>Apresentar: introdução histórica + exposição (seções I–IV da lição)</td><td class="t">13 min</td></tr>
+  <tr><td>2ª</td><td>Apresentar: introdução histórica + exposição (seções I–IV)</td><td class="t">13 min</td></tr>
   <tr><td>3ª</td><td>Pesquisar em grupos</td><td class="t">9 min</td></tr>
   <tr><td>4ª</td><td>Expressar o que aprenderam</td><td class="t">9 min</td></tr>
   <tr><td>5ª</td><td>Inspirar a prática de vida</td><td class="t">4 min</td></tr>
@@ -57,86 +65,153 @@ histórica. Com 50 min, alongue as partes 3 e 4 para 15 min.</div>
 <div class="partbar"><span class="dur">5 min</span>1ª PARTE — Convidar para a aula</div>
 <div class="say"><span class="who">Pergunta de abertura</span>
 "<mark>Se você tivesse apenas um minuto para transmitir uma mensagem capaz de salvar vidas, o que você
-diria?</mark>" <span style="font-family:sans-serif;font-size:8.4pt;color:#55606b;">(ouça algumas respostas)</span></div>
-<div class="say"><span class="who">O que você fala</span>
-"Guardem sua resposta. Paulo dedicou a vida a anunciar uma mensagem urgente assim. Mesmo com perseguição e
-prisão, ele estava convencido: <mark>o evangelho é a única esperança de um mundo perdido</mark>. Romanos abre
-apresentando três realidades: <mark>quem é o mensageiro, qual é a mensagem, e por que ela é tão necessária.</mark>"</div>
+diria?</mark>" <span style="font-family:sans-serif;font-size:8.4pt;color:#55606b;">(ouça 2 ou 3 respostas)</span></div>
+<div class="curta"><span class="who">Fala curta</span>
+Paulo deu a vida por uma mensagem urgente que salva — o evangelho, a única esperança de um mundo perdido.
+Romanos abre com 3 realidades: <b>quem é o mensageiro, qual é a mensagem, por que é tão necessária</b>.</div>
+<div class="say"><span class="who">Fala completa</span>
+"Guardem a resposta de vocês, porque é exatamente sobre isso que a nossa aula fala hoje. Paulo, o autor de
+Romanos, dedicou a vida inteira a anunciar uma mensagem urgente assim — uma mensagem capaz de salvar. E ele
+fez isso mesmo enfrentando perseguição, prisão, açoite, naufrágio. Por quê? Porque estava absolutamente
+convencido de uma coisa: <mark>o evangelho é a única esperança de um mundo perdido</mark>. E olha como Paulo
+começa a carta: apresentando três realidades que vão guiar a nossa aula — <mark>quem é o mensageiro, qual é a
+mensagem, e por que essa mensagem é tão necessária</mark>. Vamos ver as três."</div>
 
 <div class="partbar"><span class="dur">13 min</span>2ª PARTE — Apresentar o assunto</div>
 <p class="rec">Recursos: Bíblias de estudo, lição do aluno, lousa/slides.</p>
 
-<h3>Introdução histórica (≈3 min — não está na lição do aluno; abertura sua)</h3>
-<div class="say"><span class="who">O que você fala</span>
-"Antes do capítulo 1, deixa eu situar vocês. Paulo escreve <mark>por volta do ano 57, provavelmente de
-Corinto</mark>, no fim da 3ª viagem, antes de subir a Jerusalém (Rm 15.25-26). <mark>Paulo nunca tinha ido a
-Roma</mark> — queria conhecer a igreja e seguir até a Espanha (Rm 15.23-24). E essa igreja <mark>não foi
-fundada por apóstolo</mark>: provavelmente começou com judeus convertidos no Pentecostes (At 2.10). Por volta
-do ano 49, <mark>Cláudio expulsou os judeus de Roma</mark> (por isso Áquila e Priscila estavam fora, At 18.2);
-quando voltaram, a igreja já era predominantemente gentílica — pano de fundo do tema judeus × gentios. E foi a
-leitura de Romanos que <mark>acendeu a Reforma</mark> em Lutero. É essa carta que começamos hoje."</div>
+<h3>Introdução — contexto histórico (≈2-3 min — não está na apostila do aluno)</h3>
+<div class="curta"><span class="who">Fala curta</span>
+Paulo escreve ~ano 57, de Corinto, a uma igreja que não conhecia e que <b>não foi fundada por apóstolo</b>
+(nasceu de convertidos do Pentecostes). Cláudio expulsou os judeus (At 18.2), então a igreja ficou
+majoritariamente gentia — pano de fundo do tema judeus × gentios. Foi Romanos que <b>acendeu a Reforma</b>.</div>
+<div class="say"><span class="who">Fala completa</span>
+"Antes de abrir o capítulo 1, deixa eu situar vocês no tempo e no lugar. Quem escreve é Paulo, <mark>por volta
+do ano 57</mark>, provavelmente da cidade de Corinto, no fim da sua terceira viagem missionária — pouco antes
+de subir a Jerusalém levando uma oferta para os irmãos pobres. Um detalhe importante: <mark>Paulo nunca tinha
+ido a Roma</mark>. Ele escrevia para uma igreja que não conhecia pessoalmente, mas que queria muito visitar —
+e, a partir dela, seguir pregando até a Espanha, até o fim do mundo conhecido. E que igreja era essa? Aqui tem
+uma curiosidade que vale contar: <mark>a igreja de Roma não foi fundada por nenhum apóstolo</mark>. O mais
+provável é que nasceu de gente comum — judeus que estavam em Jerusalém no dia de Pentecostes, se converteram
+e, ao voltar pra casa, levaram o evangelho pra capital do Império. Só que, por volta do ano 49, o imperador
+<mark>Cláudio expulsou os judeus de Roma</mark> — por isso Paulo, em Atos, encontra Áquila e Priscila já fora
+da cidade. Quando Cláudio morreu, os judeus puderam voltar, mas a essa altura a igreja de Roma já era formada
+principalmente por gentios. Guardem isso, porque boa parte de Romanos vai tratar exatamente da relação entre
+judeus e gentios dentro da mesma igreja. E por que essa carta é tão importante pra nós? Porque foi a leitura
+de Romanos que, mil e quinhentos anos depois, <mark>abriu os olhos de Lutero para a graça e acendeu a
+Reforma</mark>. É essa carta que a gente começa hoje. Vamos às três realidades."</div>
 
-<h3>a) O mensageiro — Paulo (lição, seção I)</h3>
-<div class="aluno"><span class="tag">Lição do Aluno — I. Remetente</span>
-Paulo apresenta-se como "servo de Jesus Cristo, chamado para ser apóstolo" (Rm 1.1). Seu apostolado era fruto
-de um chamado soberano de Deus, pois havia sido chamado pessoalmente pelo Cristo ressurreto (Rm 1.4-5). Antes
-de reivindicar autoridade, identifica-se como "servo" — servia àquele que antes perseguia (At 9.4-5). Nascido
-judeu e fariseu zeloso (Fp 3.5-6), tornou-se o apóstolo dos gentios (Gl 2.7-9), "devedor a gregos e a
-bárbaros" (Rm 1.14), para conduzi-los à "obediência por fé" (Rm 1.5).</div>
-<div class="say"><span class="who">O que você fala</span>
-"Repara na ordem: antes de reivindicar autoridade, ele se chama <b>servo</b>, e servia justamente Aquele que
-antes perseguia. <mark>A autoridade dele não vinha de prestígio humano, mas do chamado do Cristo ressurreto.</mark>
-<mark>A conversão de Paulo é a prova viva do poder da graça: de perseguidor a pregador.</mark>"</div>
-<div class="ilu"><b>Ilustração:</b> autoridade que vem de chamado não é a mesma coisa que título. Comprar um
-diploma na parede não faz de ninguém médico. Paulo não se apresenta pelo currículo — mas por <b>quem o
-enviou</b>. E se foi Cristo que enviou, nem prisão o cala.</div>
+<h3>a) O mensageiro — Paulo (I. Remetente)</h3>
+<div class="aluno"><span class="tag">Lição do Aluno — I (referência)</span>
+Paulo se apresenta como "servo de Jesus Cristo, chamado para ser apóstolo" (Rm 1.1); sua autoridade vinha do
+chamado do Cristo ressurreto, não de prestígio humano. De fariseu perseguidor (Fp 3.5-6) tornou-se o apóstolo
+dos gentios (Gl 2.7-9), "devedor a gregos e a bárbaros" (Rm 1.14), para conduzi-los à "obediência por fé" (Rm 1.5).</div>
+<div class="curta"><span class="who">Fala curta</span>
+Paulo se apresenta primeiro como <b>servo</b>, depois apóstolo. A autoridade dele vem do <b>chamado do Cristo
+ressurreto</b>, não de prestígio. De perseguidor a pregador — a graça alcança qualquer um.</div>
+<div class="say"><span class="who">Fala completa</span>
+"Primeira realidade: <b>quem é o mensageiro</b>. Paulo se apresenta logo no versículo 1 de um jeito que a
+gente não pode passar batido — ele se chama 'servo de Jesus Cristo, chamado para ser apóstolo'. Repara na
+ordem das palavras: antes de dizer que é apóstolo, antes de reivindicar qualquer autoridade, ele se chama
+<b>servo</b>. E servia justamente Aquele que antes ele perseguia — porque esse mesmo Paulo, antes de se
+converter, era um fariseu zeloso que perseguia a igreja de casa em casa, achando que estava defendendo a
+Deus. Foi o próprio Cristo ressurreto que o parou no caminho de Damasco e o chamou pessoalmente. Então, quando
+alguém questionava a autoridade de Paulo — e questionavam —, a resposta dele não era o currículo:
+<mark>a autoridade de Paulo não vinha de prestígio humano, mas do chamado do Cristo ressurreto</mark>. E aqui
+está o que precisa marcar a gente: <mark>a conversão de Paulo é a prova viva do poder da graça</mark> — a
+graça pegou o maior inimigo da igreja e fez dele o maior missionário. De perseguidor a pregador. Isso quer
+dizer que <mark>ninguém está fora do alcance da graça de Deus</mark>. <span class="ilu">Deixa eu ilustrar:</span>
+autoridade que vem de chamado não é a mesma coisa que título comprado. Um sujeito pendura um diploma na
+parede, mas isso não faz dele médico. Paulo não se apresenta pelo diploma — ele se apresenta por <b>quem o
+enviou</b>. E quando é Cristo que envia, nem prisão cala a mensagem."</div>
 
-<h3>b) A igreja de Roma (lição, seção II)</h3>
-<div class="aluno"><span class="tag">Lição do Aluno — II. Destinatária</span>
-Paulo saúda a igreja de Roma reconhecendo seu testemunho sólido (Rm 1.7-8), embora não a conhecesse
-pessoalmente. Ela ocupava lugar estratégico: dali Paulo esperava seguir para a Espanha (Rm 15.23-24). Contudo,
-só chegaria a Roma anos depois, como prisioneiro — e ainda assim a providência de Deus se manifestou,
-confirmando que nem as cadeias frustram o avanço do evangelho (At 28.14-16).</div>
-<div class="say"><span class="who">O que você fala</span>
-"Uma lição pra nós: <mark>igreja saudável não existe só pra cuidar de si mesma, mas pra participar da expansão
-do Reino de Deus.</mark>"</div>
-<div class="ilu"><b>Ilustração:</b> o Mar Morto só recebe água e não devolve — por isso nada vive nele. A igreja
-que só recebe e nunca transborda vira Mar Morto espiritual. A de Roma era o contrário.</div>
+<h3>b) A igreja de Roma (II. Destinatária)</h3>
+<div class="aluno"><span class="tag">Lição do Aluno — II (referência)</span>
+Igreja com testemunho sólido (Rm 1.7-8), que Paulo não conhecia; estratégica para a missão até a Espanha (Rm
+15.23-24). Ele só chegaria a Roma como prisioneiro — e nem as cadeias frustraram o evangelho (At 28.14-16).</div>
+<div class="curta"><span class="who">Fala curta</span>
+Roma era igreja <b>estratégica</b> pra levar o evangelho até a Espanha. Lição: igreja saudável não existe só
+pra si — existe pra <b>expandir o Reino</b>. Nem preso Paulo foi calado.</div>
+<div class="say"><span class="who">Fala completa</span>
+"Segunda realidade: <b>para quem</b> essa carta foi escrita. Paulo saúda a igreja de Roma e já reconhece que
+ela tinha um testemunho forte, conhecido no Império inteiro. E vale explicar pra turma como ela surgiu: a
+Bíblia não conta quem fundou a igreja de Roma — o mais provável é que nasceu de gente comum levando o
+evangelho de boca em boca, não de um grande apóstolo plantando. Agora, por que Paulo queria tanto ir a Roma?
+Porque Roma era estratégica: era o centro do mundo, e dali ele queria seguir pregando até a Espanha. E aqui
+está a lição que eu quero que a gente leve pra casa: a igreja de Roma não existia só pra ela mesma — ela era
+base pra o evangelho ir mais longe. E é isso que Deus espera de toda igreja: <mark>igreja saudável não existe
+só pra cuidar de si mesma, mas pra participar da expansão do Reino de Deus</mark>. <span class="ilu">Deixa eu
+ilustrar:</span> tem um lago em Israel que só recebe água e nunca devolve — é o Mar Morto, e o nome já diz
+tudo: nada vive nele, porque água que só entra e não sai apodrece. <mark>A igreja que só recebe e nunca
+transborda pra fora vira um Mar Morto espiritual</mark>. A de Roma era o contrário: recebia e espalhava. E olha
+a beleza da providência de Deus: Paulo tanto quis ir a Roma pregar, e acabou chegando lá anos depois algemado,
+como prisioneiro. Mas nem a cadeia frustrou o plano — foi dali, preso, que ele pregou. Nem as correntes seguram
+o evangelho."</div>
 
-<h3>c) O tema — o evangelho, poder de Deus (lição, seção III)</h3>
-<div class="aluno"><span class="tag">Lição do Aluno — III. O tema</span>
-Esta carta não nasceu para corrigir crises locais, o que permitiu a Paulo apresentar amplamente "meu
-evangelho" (Rm 2.16). Esse evangelho cumpre as promessas dos profetas (Rm 1.1-2); seu centro é o Filho de
-Deus, descendente de Davi, ressurreto ao terceiro dia (Rm 1.3-4). Aponta para Rm 1.16: "não me envergonho do
-evangelho, porque é o poder de Deus para salvação de todo aquele que crê". "Viver pela fé" (Hc 2.4) é
-agarrar-se à promessa e renunciar a qualquer outra segurança. O evangelho não é só a mensagem da igreja, mas o
-meio pelo qual Deus age para salvar.</div>
-<div class="say"><span class="who">O que você fala</span>
-"Presta atenção na palavra <mark>PODER</mark>. O evangelho não é conselho, não é dica de vida — é <mark>Deus em
-ação, salvando quem crê.</mark>"</div>
-<div class="ilu"><b>Ilustração:</b> um manual de natação não salva quem está se afogando — o que salva é o
-salva-vidas que pula na água. O evangelho não é um manual de "como se salvar"; <b>é Deus pulando na água pra
-salvar quem não consegue sozinho.</b></div>
+<h3>c) A mensagem — o evangelho, poder de Deus (III. O tema)</h3>
+<div class="aluno"><span class="tag">Lição do Aluno — III (referência)</span>
+"Meu evangelho" (Rm 2.16): cumprimento das promessas (Rm 1.1-2); centro é o Filho, descendente de Davi,
+ressurreto (Rm 1.3-4). Rm 1.16: "é o poder de Deus para salvação de todo aquele que crê". "Viver pela fé" (Hc
+2.4) = renunciar a qualquer outra segurança e agarrar-se à graça.</div>
+<div class="curta"><span class="who">Fala curta</span>
+Romanos 1.16 é o lema: o evangelho é o <b>PODER</b> de Deus para salvar quem crê — não conselho, não moral.
+Viver pela fé (Hc 2.4) é confiar só na graça.</div>
+<div class="say"><span class="who">Fala completa</span>
+"Terceira realidade, e essa é o coração de tudo: <b>qual é a mensagem</b>. Uma coisa que faz Romanos ser
+diferente das outras cartas de Paulo — a maioria delas ele escreveu pra apagar incêndio, pra corrigir uma
+briga ou um erro numa igreja. Romanos, não. Como não tinha uma crise pra resolver, Paulo teve liberdade pra
+fazer a exposição mais completa e organizada do evangelho que existe — aquilo que ele chama de 'meu
+evangelho'. E qual é o centro dessa mensagem? É uma Pessoa: o Filho de Deus, que entrou na história como
+descendente de Davi, viveu em obediência perfeita e, principalmente, ressuscitou dos mortos ao terceiro dia. E
+tudo isso desemboca no versículo que é o lema da carta, Romanos 1.16: <mark>'não me envergonho do evangelho,
+porque é o poder de Deus para a salvação de todo aquele que crê'</mark>. Presta atenção nessa palavra, e
+guardem ela: <mark>PODER</mark>. O evangelho não é um conselho, não é uma dica de autoajuda, não é uma regrinha
+de moral pra você ser gente melhor. <mark>O evangelho é o poder de Deus — é Deus em ação, salvando quem
+crê</mark>. E Paulo reforça citando o profeta Habacuque: 'o justo viverá pela fé'. Viver pela fé é largar
+qualquer outra segurança — o seu esforço, o seu mérito, a sua religião — e se agarrar só na graça de Deus.
+<span class="ilu">Deixa eu ilustrar:</span> um manual de natação não salva ninguém que está se afogando. Você
+joga o livro na água, explica a técnica perfeita — a pessoa afunda do mesmo jeito. O que salva um afogado é o
+salva-vidas que pula na água e puxa. <mark>O evangelho não é um manual de "como se salvar"; é Deus pulando na
+água pra salvar quem não tinha a menor condição de se salvar sozinho</mark>."</div>
 
-<h3>d) A humanidade perdida (lição, seção IV)</h3>
-<div class="aluno"><span class="tag">Lição do Aluno — IV. A relevância</span>
-A perdição humana é fruto da rejeição consciente da revelação de Deus na criação (a "revelação natural" — Rm
-1.19-21; Sl 19.1-2), o que torna todos "indesculpáveis" (Rm 1.20). Os homens conheceram a Deus, mas não o
-glorificaram nem lhe deram graças (Rm 1.21) — não é ignorância, é rebeldia (Rm 1.18). Isso culmina na
-idolatria (Rm 1.23), e Deus os entrega às consequências da escolha (Rm 1.24,26,28), incluindo a desordem
-sexual (Rm 1.26-27) e o colapso social — as 21 iniquidades (Rm 1.29-31) — até aprovarem quem pratica (Rm 1.32).</div>
-<div class="say"><span class="who">O que você fala</span>
-"O ponto central: <mark>a perdição não é falta de informação — é rejeição consciente da verdade.</mark> E três
-vezes o texto repete a frase assustadora: <mark>'Deus os entregou'.</mark>"</div>
-<div class="ilu"><b>Ilustração:</b> a ira de Deus aqui não é um raio do céu — é Ele <b>soltar a mão</b>. Como o
-pai que, depois de muito alertar, deixa o filho seguir o caminho que insiste em escolher. <b>O inferno começa
-quando Deus diz: "seja feita a SUA vontade".</b></div>
+<h3>d) Por que é necessária — a humanidade perdida (IV. A relevância)</h3>
+<div class="aluno"><span class="tag">Lição do Aluno — IV (referência)</span>
+Perdição = rejeição consciente da revelação de Deus na criação (Rm 1.19-21) → todos "indesculpáveis" (Rm
+1.20); não glorificaram nem agradeceram (Rm 1.21) → idolatria (Rm 1.23) → "Deus os entregou" (Rm 1.24,26,28) →
+desordem sexual (Rm 1.26-27) e colapso social, 21 iniquidades (Rm 1.29-31) → aprovam quem pratica (Rm 1.32).</div>
+<div class="curta"><span class="who">Fala curta</span>
+A humanidade é <b>indesculpável</b>: conheceu Deus pela criação e o rejeitou de propósito. Perdição é rejeição
+<b>consciente</b>, não ignorância. Três vezes "<b>Deus os entregou</b>" — Ele solta a mão.</div>
+<div class="say"><span class="who">Fala completa</span>
+"Quarta realidade: <b>por que essa mensagem é tão necessária</b>. E a resposta é dura: porque a humanidade
+está perdida — e perdida de um jeito que ela mesma escolheu. Presta atenção no argumento de Paulo, porque é
+genial. Ele diz que Deus se revelou na criação — os céus, a natureza, a ordem do universo gritam que existe um
+Criador. É o que a gente chama de 'revelação natural'. Ou seja: ninguém vai poder chegar diante de Deus e
+dizer 'eu não sabia'. Por isso Paulo usa uma palavra pesada: todos são <mark>INDESCULPÁVEIS</mark>. Então o
+problema não é falta de informação — é rebeldia. Os homens conheceram a Deus, mas não quiseram glorificá-lo nem
+agradecer. E aqui está o ponto central da lição inteira, que eu não posso deixar de dizer: <mark>a perdição da
+humanidade não é falta de informação, é rejeição consciente da verdade</mark>. As pessoas não se perdem por
+ignorância; se perdem porque empurram Deus pra longe de propósito. E o que acontece quando o homem empurra
+Deus? Paulo repete três vezes a frase mais assustadora do capítulo: <mark>'Deus os entregou'</mark>. E aqui eu
+quero desfazer um engano: a ira de Deus, nesse texto, não é um raio caindo do céu. <span class="ilu">É Deus
+soltar a mão.</span> É Deus dizer: 'você quer viver sem mim? Então viva, e colha o que isso dá'. É como o pai
+que alerta, alerta, alerta, e num certo ponto deixa o filho seguir o caminho que ele insiste em escolher.
+<mark>Em certo sentido, o inferno começa quando Deus diz: "seja feita a SUA vontade"</mark>. E o resultado é
+uma espiral que vai descendo: primeiro a falência espiritual, depois a corrupção moral, depois o colapso
+social — Paulo lista vinte e uma iniquidades, da inveja e da fofoca até o homicídio — e o fundo do poço é
+quando as pessoas não só praticam o mal, mas passam a aplaudir quem pratica. Esse é o retrato da humanidade sem
+Deus. E é pra esse mundo que o evangelho é a única esperança."</div>
 
-<h3>Conclusão (lição)</h3>
-<div class="aluno"><span class="tag">Lição do Aluno — Conclusão</span>
-Paulo apresenta um quadro terrível da humanidade sem Deus — espiritual, intelectual, moral e social — e deixa
-claro que proclamar o evangelho a todos os povos é tarefa urgente e necessária. Só o poder de Deus pode salvar
-a humanidade em pecado.</div>
+<h3>Fechamento da exposição (Conclusão)</h3>
+<div class="curta"><span class="who">Fala curta</span>
+Diagnóstico brutal da humanidade sem Deus → só o <b>poder de Deus</b> salva → evangelizar é <b>urgente</b>.</div>
+<div class="say"><span class="who">Fala completa</span>
+"Então olha o que Paulo fez logo na abertura da carta: ele pintou um quadro terrível — a humanidade falida por
+dentro, corrompida na mente, decadente na moral e no convívio. Um diagnóstico brutal. Mas ele fez isso de
+propósito, pra mostrar uma coisa: <mark>se o problema é tão profundo, nenhuma religião, nenhuma boa intenção,
+nenhum esforço humano dá conta — só o poder de Deus pode salvar</mark>. É por isso que anunciar o evangelho não
+é hobby de quem gosta: é tarefa urgente. Paulo entendeu isso e deu a vida por isso. A pergunta que fica é: e
+nós, entendemos?"</div>
 
 <div class="partbar"><span class="dur">9 min</span>3ª PARTE — Pesquisar em grupos</div>
 <p class="rec">Divida a classe em 3 grupos e entregue as perguntas. <i>(Pistas para você conduzir.)</i></p>
@@ -159,19 +234,23 @@ Romanos 1 e <b>cinco</b> para a <b>solução do evangelho</b>; depois apresenta 
 <p class="guide"><b>Exemplos se travarem:</b> condição — perdida, indesculpável, idólatra, entregue, rebelde;
 solução — graça, poder de Deus, fé, Cristo, salvação.</p>
 <div class="say"><span class="who">Encerramento (o que você fala)</span>
-"Juntando as listas: <mark>Romanos 1 mostra dois caminhos opostos — a humanidade rejeitando a Deus, e Deus
-oferecendo salvação em Cristo.</mark> A ponte entre as duas colunas é o evangelho."</div>
+"Juntando as duas listas, é isso que Romanos 1 coloca diante de nós: <mark>dois caminhos opostos — a
+humanidade rejeitando a Deus, e Deus oferecendo salvação por meio de Cristo</mark>. A aula inteira foi a
+distância entre essas duas colunas — e a única ponte entre elas é o evangelho."</div>
 
 <div class="partbar"><span class="dur">4 min</span>5ª PARTE — Inspirar a prática de vida</div>
 <p><b>Atividade:</b> cada aluno escreve <b>uma frase</b> que apresente o evangelho, respondendo: a) qual é o
 problema do ser humano? b) o que Cristo fez? c) como alguém pode ser salvo?</p>
-<div class="say"><span class="who">Modelo pronto</span>
-"O problema é que <mark>estou perdido e indesculpável diante de Deus por causa do meu pecado</mark>; a solução
-é que <mark>Cristo morreu e ressuscitou para salvar pecadores</mark>; e sou salvo <mark>quando me arrependo e
-creio nele</mark>." → Desafio: <mark>compartilhe com pelo menos uma pessoa na semana.</mark> Encerre com oração.</div>
+<div class="say"><span class="who">O que você fala + modelo</span>
+"Pra fechar, quero que cada um escreva o evangelho numa frase, respondendo três perguntas: qual é o problema,
+o que Cristo fez, e como ser salvo. Vou dar um modelo: <mark>'o problema é que estou perdido e indesculpável
+diante de Deus por causa do meu pecado; a solução é que Cristo morreu e ressuscitou para salvar pecadores; e
+eu sou salvo quando me arrependo e creio nele'</mark>. Agora escrevam a de vocês. E o desafio da semana:
+<mark>compartilhe essa frase com pelo menos uma pessoa</mark> — pessoalmente ou nas redes." Encerre com
+<b>oração pela turma</b>.</div>
 
-<div class="aluno" style="margin-top:10px;"><span class="tag">Lição do Aluno — Aplicações (para discussão)</span>
+<div class="aluno" style="margin-top:10px;"><span class="tag">Lição do Aluno — Aplicações (para discussão, se sobrar tempo)</span>
 1. Como reagir diante de alguém que exige ser tratado como apóstolo hoje? Elabore uma refutação bíblica.
-2. Você consegue resumir o evangelho em até um minuto?
-3. Correlacione a descrição da humanidade sem Deus com os nossos dias: que diagnóstico você faz da sociedade?
-4. Como a igreja deve se posicionar diante de uma sociedade que normalizou o desvio sexual?</div>
+2. Você consegue resumir o evangelho em até um minuto? &nbsp; 3. Correlacione a descrição da humanidade sem
+Deus com os nossos dias: que diagnóstico você faz da sociedade? &nbsp; 4. Como a igreja deve se posicionar
+diante de uma sociedade que normalizou o desvio sexual?</div>
