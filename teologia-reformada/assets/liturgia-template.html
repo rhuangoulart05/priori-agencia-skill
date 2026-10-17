@@ -1,0 +1,52 @@
+<meta charset="utf-8">
+<!--
+  TEMPLATE de liturgia (contexto + roteiro) para virar PDF com destaques.
+  Uso: preencha os blocos, marque com <mark>...</mark> só as frases que o usuario NAO PODE
+  deixar de falar, e converta:  weasyprint este.html saida.pdf
+  Mantenha a estrutura: legenda -> PARTE A (contexto) -> PARTE B (roteiro: Momento 1, HINO, Momento 2).
+-->
+<style>
+  @page { size: A4; margin: 18mm 16mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "Georgia","Times New Roman",serif; color:#1a1a1a; font-size:11.2pt; line-height:1.5; margin:0; }
+  h1 { font-size:20pt; margin:0 0 2px; color:#1b3a5b; }
+  .sub { color:#55606b; font-size:10pt; margin:0 0 14px; }
+  .partbar { background:#1b3a5b; color:#fff; padding:7px 12px; margin:20px 0 10px; font-size:13pt; font-weight:bold; border-radius:3px; }
+  h2 { font-size:12.2pt; color:#1b3a5b; margin:15px 0 4px; border-bottom:1px solid #d5dde5; padding-bottom:3px; }
+  h3 { font-size:11.4pt; color:#7a3e00; margin:13px 0 3px; }
+  p { margin:5px 0; }
+  ul { margin:5px 0; padding-left:20px; } li { margin:3px 0; }
+  .fala { border-left:4px solid #1b3a5b; background:#f5f8fb; padding:8px 12px; margin:7px 0; border-radius:0 3px 3px 0; }
+  .fala .who { font-family:sans-serif; font-size:8.8pt; text-transform:uppercase; letter-spacing:.5px; color:#1b3a5b; font-weight:bold; display:block; margin-bottom:4px; }
+  mark { background:#ffe27a; padding:1px 2px; border-radius:2px; box-decoration-break:clone; }
+  .read { font-family:sans-serif; font-size:10pt; background:#eef3f7; border:1px solid #cfdae4; padding:6px 10px; margin:6px 0; border-radius:3px; } .read b { color:#1b3a5b; }
+  .hino { text-align:center; font-family:sans-serif; font-weight:bold; color:#7a3e00; background:#fbf3e8; border:1px dashed #d9a25a; padding:7px; margin:10px 0; border-radius:3px; }
+  .legend { font-family:sans-serif; font-size:9pt; color:#55606b; margin:6px 0 0; }
+  .obs { font-size:9.6pt; color:#444; background:#f7f7f5; border:1px solid #e2e2dc; padding:8px 11px; border-radius:3px; margin-top:12px; }
+</style>
+
+<h1>Liturgia — {TEXTO-TEMA}</h1>
+<p class="sub">{Data} &nbsp;·&nbsp; Tema: <b>{tema}</b> &nbsp;·&nbsp; Dois momentos + contexto</p>
+<p class="legend"><mark>Texto destacado em amarelo</mark> = pontos que você <b>não pode deixar de falar</b>.</p>
+
+<div class="partbar">PARTE A — Contexto (para você entender)</div>
+<h2>1. Onde o texto está</h2><p>{...}</p>
+<h2>2. Quem escreveu e em que situação</h2><p>{... marque com <mark> o fato-chave ...}</p>
+<h2>3. Gênero</h2><p>{...}</p>
+<h2>4. Imagens e pano de fundo</h2><ul><li>{...}</li></ul>
+<h2>5. Analogias com outros textos</h2><ul><li><b>{ref}</b> — {por que conecta}</li></ul>
+<h2>6. Estrutura</h2><ul><li>{blocos e versículo-chave}</li></ul>
+<h2>7. A leitura em Cristo</h2><p>{...}</p>
+
+<div class="partbar">PARTE B — Roteiro do culto</div>
+<h3>Momento 1 — Abertura</h3>
+<p class="read"><b>Você lê:</b> {versículo de abertura}</p>
+<div class="fala"><span class="who">O que você fala (~1 min)</span>
+  "{fala de abertura, com <mark>as frases essenciais destacadas</mark>, terminando na ponte pro hino}"</div>
+<div class="hino">→ HINO &nbsp;(vocês escolhem)</div>
+<h3>Momento 2 — {texto-tema}</h3>
+<p class="read"><b>Você lê:</b> {texto-tema} (na íntegra, da sua Bíblia)</p>
+<div class="fala"><span class="who">O que você fala sobre o texto</span>
+  "{fala destilada da Parte A, em 1ª pessoa, com <mark>as frases essenciais destacadas</mark>}"</div>
+
+<div class="obs"><b>Observações:</b> {pontos ajustáveis + onde há incerteza histórica}</div>
